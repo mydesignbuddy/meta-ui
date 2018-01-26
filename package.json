@@ -1,0 +1,35 @@
+{
+  "name": "metaui",
+  "version": "0.0.1",
+  "description": "Cross platform UI for Hybird (HTML UI) apps.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "keywords": [
+    "electron",
+    "ui",
+    "cross",
+    "plalform",
+    "windows",
+    "mac",
+    "ios",
+    "android",
+    "gui",
+    "components",
+    "css"
+  ],
+  "author": "Buddy Toups <me@mydesignbuddy.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "node-sass": "^4.7.2",
+    "normalize.css": "^7.0.0",
+    "postcss-loader": "^2.0.10",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.4.1"
+  }
+}
