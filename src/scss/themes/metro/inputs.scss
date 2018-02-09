@@ -1,0 +1,45 @@
+input[type="text"].metaui,
+input[type="password"].metaui,
+input[type="file"].metaui,
+input[type="color"].metaui,
+input[type="date"].metaui,
+input[type="time"].metaui,
+input[type="email"].metaui,
+input[type="month"].metaui,
+input[type="week"].metaui,
+input[type="number"].metaui,
+input[type="search"].metaui,
+input[type="tel"].metaui,
+input[type="url"].metaui,
+textarea.metaui {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  border: 2px solid $color-dark-default;
+  padding: 0.3125rem;
+  font-size: 100%;
+  margin: 0.15625rem 0;
+  outline: none;
+  &:disabled {
+    background-color: #ebebe4;
+    border-color: #CCCCCD;
+    color: #CCCCCD;
+  }
+  &:focus {
+    border-color: $primary-color;
+  }
+}
+input[type="color"].metaui {
+  -webkit-appearance: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+input[type="color"].metaui::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"].metaui::-webkit-color-swatch {
+  border: none;
+}

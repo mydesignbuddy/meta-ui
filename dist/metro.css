@@ -448,6 +448,9 @@ template {
 .metaui-window {
   display: block; }
 
+hr {
+  border: 1px solid #CCCCCD; }
+
 .metaui-container {
   font-family: "Segoe UI", "Open Sans", sans-serif, serif;
   font-size: 0.875rem;
@@ -459,82 +462,520 @@ template {
   display: block;
   position: relative;
   height: auto;
-  width: 100%;
-  background-color: #ffffff;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3); }
-  .metaui-window .metaui-titlebar {
+  width: auto;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  padding-bottom: 0.0125rem; }
+  .metaui-window .titlebar {
     position: relative;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 0.4375rem 0.3125rem;
-    border-bottom: 1px #e9e9e9 solid;
     border-top: 0;
-    cursor: default; }
-    .metaui-window .metaui-titlebar .metaui-title {
+    max-height: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: right; }
+    .metaui-window .titlebar .title {
       font-size: 0.875rem;
       font-style: normal;
-      font-weight: 700; }
-  .metaui-window .metaui-actions {
-    position: absolute;
-    height: 1.5rem;
-    min-height: 1.5rem;
+      font-weight: 700;
+      padding-left: 0.25rem;
+      flex-grow: 1; }
+  .metaui-window .actions {
     text-align: center;
     vertical-align: middle;
-    font-size: 1rem;
-    font-weight: normal;
-    top: 0.3rem;
-    right: 0.2rem;
-    margin: -5px; }
-    .metaui-window .metaui-actions .metaui-titlebar-button {
-      display: inline-block;
-      width: 60px;
-      height: 32px;
-      border: 0 #000 solid; }
-      .metaui-window .metaui-actions .metaui-titlebar-button:hover {
-        background-color: #e5e5e5; }
-    .metaui-window .metaui-actions .metaui-titlebar-button.minimize:after {
-      display: block;
-      position: relative;
-      width: 0.55rem;
-      border-bottom-width: 2px;
+    font-size: 0.25rem;
+    margin-top: -0.5rem;
+    margin-right: 0.25rem;
+    height: 1.5rem;
+    display: flex; }
+    .metaui-window .actions .titlebar-button {
+      width: 2.5rem;
+      height: 1.5rem;
+      border: 0; }
+      .metaui-window .actions .titlebar-button:hover {
+        border-color: #fff;
+        background-color: #0079D8; }
+        .metaui-window .actions .titlebar-button:hover:after {
+          border-color: #fff; }
+      .metaui-window .actions .titlebar-button:after {
+        border: 2px #000 solid;
+        position: relative;
+        display: block;
+        left: 50%;
+        font-size: 1.5rem;
+        font-weight: normal; }
+    .metaui-window .actions .titlebar-button.minimize:after {
       content: " ";
-      bottom: 0.375rem;
-      left: 50%;
       margin-left: -0.4rem;
-      top: 0.5rem;
+      top: 0.35rem;
+      bottom: 0.375rem;
+      width: 0.65rem;
       height: 0.55rem;
-      border: 2px #000 solid; }
-    .metaui-window .metaui-actions .metaui-titlebar-button.maximize:after {
-      display: block;
-      position: relative;
-      width: 0.75rem;
-      border-bottom-width: 2px;
+      border-width: 0;
+      border-bottom-width: 2px; }
+    .metaui-window .actions .titlebar-button.maximize:after {
       content: " ";
-      bottom: 0.375rem;
-      left: 50%;
       margin-left: -0.4rem;
-      top: 0.4rem;
-      height: 0.75rem;
-      border: 2px #000 solid; }
-    .metaui-window .metaui-actions .metaui-titlebar-button.close:hover {
-      background-color: #e81123;
+      top: 0.45rem;
+      bottom: 0.375rem;
+      height: 0.4rem;
+      width: 0.6rem; }
+    .metaui-window .actions .titlebar-button.close {
+      width: 4rem;
+      background-color: #ce1221;
       color: #fff; }
-    .metaui-window .metaui-actions .metaui-titlebar-button.close:after {
-      display: block;
-      width: 0.625rem;
-      content: "\D7";
-      position: relative;
-      left: 50%;
-      margin-top: 0.35rem;
-      line-height: 1.7rem;
-      margin-left: -0.48rem;
-      font-size: 2rem;
-      font-weight: lighter;
-      bottom: 0.25rem; }
+      .metaui-window .actions .titlebar-button.close:hover {
+        background-color: #e81123;
+        color: #fff; }
+      .metaui-window .actions .titlebar-button.close:after {
+        content: "\D7";
+        margin-top: 0.35rem;
+        margin-left: -0.48rem;
+        bottom: 0.6rem;
+        width: 0.625rem;
+        border-width: 0;
+        line-height: 2rem; }
   .metaui-window .metaui-content {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: block;
-    padding: 0.25rem; }
+    margin: 0.5rem;
+    margin-top: 0;
+    border: 1px #e9e9e9 solid;
+    padding: 1rem; }
+
+button.metaui,
+input[type="button"].metaui,
+input[type="submit"].metaui,
+input[type="reset"].metaui,
+a.metaui.button {
+  padding: 0 1rem;
+  height: 2.125rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ccc;
+  border: 2px solid #ccc;
+  color: #262626;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875rem;
+  margin: 0.15625rem 0;
+  outline: none; }
+  button.metaui:hover,
+  input[type="button"].metaui:hover,
+  input[type="submit"].metaui:hover,
+  input[type="reset"].metaui:hover,
+  a.metaui.button:hover {
+    border: 2px solid #6B6B6B; }
+  button.metaui:active,
+  input[type="button"].metaui:active,
+  input[type="submit"].metaui:active,
+  input[type="reset"].metaui:active,
+  a.metaui.button:active {
+    border: 2px solid #9A9A9A;
+    background-color: #9A9A9A; }
+  button.metaui:disabled, button.metaui.disabled,
+  input[type="button"].metaui:disabled,
+  input[type="button"].metaui.disabled,
+  input[type="submit"].metaui:disabled,
+  input[type="submit"].metaui.disabled,
+  input[type="reset"].metaui:disabled,
+  input[type="reset"].metaui.disabled,
+  a.metaui.button:disabled,
+  a.metaui.button.disabled {
+    background-color: #eaeaea;
+    color: #bebebe;
+    cursor: default;
+    border-color: transparent; }
+  button.metaui:focus,
+  input[type="button"].metaui:focus,
+  input[type="submit"].metaui:focus,
+  input[type="reset"].metaui:focus,
+  a.metaui.button:focus {
+    background-color: #0079D8;
+    color: #fff;
+    border-color: #0079D8; }
+  button.metaui.mini,
+  input[type="button"].metaui.mini,
+  input[type="submit"].metaui.mini,
+  input[type="reset"].metaui.mini,
+  a.metaui.button.mini {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.625rem;
+    height: 1.4rem;
+    line-height: 0rem; }
+  button.metaui.small,
+  input[type="button"].metaui.small,
+  input[type="submit"].metaui.small,
+  input[type="reset"].metaui.small,
+  a.metaui.button.small {
+    font-size: 0.7rem;
+    padding: 0 0.625rem;
+    height: 1.7rem;
+    line-height: 1.7rem; }
+  button.metaui.large,
+  input[type="button"].metaui.large,
+  input[type="submit"].metaui.large,
+  input[type="reset"].metaui.large,
+  a.metaui.button.large {
+    height: 2.55rem;
+    font-size: 1.05rem;
+    line-height: 2.55rem; }
+  button.metaui.primary,
+  input[type="button"].metaui.primary,
+  input[type="submit"].metaui.primary,
+  input[type="reset"].metaui.primary,
+  a.metaui.button.primary {
+    background: #0079D8;
+    color: #fff;
+    border-color: #0079D8; }
+  button.metaui.success,
+  input[type="button"].metaui.success,
+  input[type="submit"].metaui.success,
+  input[type="reset"].metaui.success,
+  a.metaui.button.success {
+    background: #60a917;
+    color: #fff;
+    border-color: #60a917; }
+  button.metaui.info,
+  input[type="button"].metaui.info,
+  input[type="submit"].metaui.info,
+  input[type="reset"].metaui.info,
+  a.metaui.button.info {
+    background: #59cde2;
+    color: #fff;
+    border-color: #59cde2; }
+  button.metaui.danger, button.metaui.alert,
+  input[type="button"].metaui.danger,
+  input[type="button"].metaui.alert,
+  input[type="submit"].metaui.danger,
+  input[type="submit"].metaui.alert,
+  input[type="reset"].metaui.danger,
+  input[type="reset"].metaui.alert,
+  a.metaui.button.danger,
+  a.metaui.button.alert {
+    background: #ce352c;
+    color: #fff;
+    border-color: #ce352c; }
+  button.metaui.warning,
+  input[type="button"].metaui.warning,
+  input[type="submit"].metaui.warning,
+  input[type="reset"].metaui.warning,
+  a.metaui.button.warning {
+    background: #fa6800;
+    color: #fff;
+    border-color: #fa6800; }
+
+a.metaui.button {
+  padding-top: 0.5rem;
+  height: 1.5rem; }
+  a.metaui.button.mini {
+    line-height: 1rem;
+    height: 0.9rem; }
+  a.metaui.button.large {
+    height: 1.95rem;
+    line-height: 1.5rem; }
+
+.metaui.checkbox {
+  display: block;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  padding-top: 0.125rem;
+  margin-bottom: 0.75rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .metaui.checkbox.inline {
+    display: inline-block; }
+  .metaui.checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0; }
+    .metaui.checkbox input[type="checkbox"]:checked ~ .checkmark {
+      background-color: #7A7B7B;
+      border-color: #7A7B7B; }
+    .metaui.checkbox input[type="checkbox"]:checked ~ .checkmark:after {
+      display: block; }
+    .metaui.checkbox input[type="checkbox"]:disabled ~ .checkmark,
+    .metaui.checkbox input[type="checkbox"]:disabled:hover ~ .checkmark {
+      cursor: default;
+      border-color: #cccccd; }
+  .metaui.checkbox:hover {
+    cursor: pointer; }
+  .metaui.checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border: 2px solid #7A7B7B; }
+    .metaui.checkbox .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 4px;
+      top: -2px;
+      width: 5px;
+      height: 12px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  .metaui.checkbox:hover input[type="checkbox"] ~ .checkmark,
+  .metaui.checkbox input[type="checkbox"]:focus ~ .checkmark {
+    background-color: #fff;
+    border-color: #3176BB;
+    cursor: pointer; }
+  .metaui.checkbox:hover input[type="checkbox"]:checked ~ .checkmark,
+  .metaui.checkbox input[type="checkbox"]:checked:focus ~ .checkmark {
+    background-color: #3176BB;
+    border-color: #3176BB; }
+  .metaui.checkbox:after {
+    content: "";
+    position: absolute;
+    display: none; }
+  .metaui.checkbox.indeterminate .checkmark {
+    background-color: #fff; }
+    .metaui.checkbox.indeterminate .checkmark:after {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+      border-width: 2px;
+      top: 1px;
+      left: 1px;
+      width: 9px;
+      height: 9px; }
+
+/* Customize the label (the metaui) */
+.metaui.radio {
+  display: block;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  padding-top: 0.125rem;
+  margin-bottom: 0.75rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .metaui.radio.inline {
+    display: inline-block; }
+  .metaui.radio input[type="radio"] {
+    position: absolute;
+    opacity: 0; }
+    .metaui.radio input[type="radio"]:checked ~ .checkmark {
+      background-color: #fff;
+      border-color: #7A7B7B; }
+    .metaui.radio input[type="radio"]:checked ~ .checkmark:after {
+      display: block; }
+    .metaui.radio input[type="radio"]:disabled ~ .checkmark, .metaui.radio input[type="radio"]:disabled:hover ~ .checkmark {
+      cursor: default;
+      border-color: #CCCCCD;
+      background-color: inherit; }
+  .metaui.radio:disabled ~ input[type="radio"]:disabled {
+    color: #CCCCCD; }
+  .metaui.radio:hover {
+    cursor: pointer; }
+  .metaui.radio .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border: 2px solid #7A7B7B;
+    border-radius: 50%; }
+    .metaui.radio .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 3px;
+      left: 3px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #7A7B7B; }
+  .metaui.radio:hover input[type="radio"] ~ .checkmark,
+  .metaui.radio input[type="radio"]:focus ~ .checkmark {
+    border-color: #3176BB;
+    cursor: pointer; }
+  .metaui.radio:hover input[type="radio"]:checked ~ .checkmark,
+  .metaui.radio input[type="radio"]:checked:focus ~ .checkmark {
+    border-color: #3176BB; }
+    .metaui.radio:hover input[type="radio"]:checked ~ .checkmark:after,
+    .metaui.radio input[type="radio"]:checked:focus ~ .checkmark:after {
+      background-color: #3176BB; }
+  .metaui.radio:hover input ~ .checkmark {
+    border-color: #3176BB; }
+
+input[type="text"].metaui,
+input[type="password"].metaui,
+input[type="file"].metaui,
+input[type="color"].metaui,
+input[type="date"].metaui,
+input[type="time"].metaui,
+input[type="email"].metaui,
+input[type="month"].metaui,
+input[type="week"].metaui,
+input[type="number"].metaui,
+input[type="search"].metaui,
+input[type="tel"].metaui,
+input[type="url"].metaui,
+textarea.metaui {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  border: 2px solid #7A7B7B;
+  padding: 0.3125rem;
+  font-size: 100%;
+  margin: 0.15625rem 0;
+  outline: none; }
+  input[type="text"].metaui:disabled,
+  input[type="password"].metaui:disabled,
+  input[type="file"].metaui:disabled,
+  input[type="color"].metaui:disabled,
+  input[type="date"].metaui:disabled,
+  input[type="time"].metaui:disabled,
+  input[type="email"].metaui:disabled,
+  input[type="month"].metaui:disabled,
+  input[type="week"].metaui:disabled,
+  input[type="number"].metaui:disabled,
+  input[type="search"].metaui:disabled,
+  input[type="tel"].metaui:disabled,
+  input[type="url"].metaui:disabled,
+  textarea.metaui:disabled {
+    background-color: #ebebe4;
+    border-color: #CCCCCD;
+    color: #CCCCCD; }
+  input[type="text"].metaui:focus,
+  input[type="password"].metaui:focus,
+  input[type="file"].metaui:focus,
+  input[type="color"].metaui:focus,
+  input[type="date"].metaui:focus,
+  input[type="time"].metaui:focus,
+  input[type="email"].metaui:focus,
+  input[type="month"].metaui:focus,
+  input[type="week"].metaui:focus,
+  input[type="number"].metaui:focus,
+  input[type="search"].metaui:focus,
+  input[type="tel"].metaui:focus,
+  input[type="url"].metaui:focus,
+  textarea.metaui:focus {
+    border-color: #3176BB; }
+
+input[type="color"].metaui {
+  -webkit-appearance: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  padding: 0; }
+
+input[type="color"].metaui::-webkit-color-swatch-wrapper {
+  padding: 0; }
+
+input[type="color"].metaui::-webkit-color-swatch {
+  border: none; }
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block; }
+
+.self-service-kiosk {
+  background-image: url(42c787f42704d62e6e1057fff9e86164.svg);
+  background-size: cover; }
+
+input[type=range].metaui {
+  -webkit-appearance: none;
+  margin: 18px 0; }
+
+input[type=range].metaui:focus {
+  outline: none; }
+
+input[type=range].metaui::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.125rem;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #bebebe;
+  border: 0; }
+
+input[type=range].metaui::-webkit-slider-thumb {
+  border: 0;
+  height: 1.5rem;
+  width: 0.5rem;
+  background: #0079D8;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -0.75rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  border-radius: 2rem; }
+
+input[type=range].metaui:focus::-webkit-slider-thumb {
+  background: #0079D8; }
+
+input[type=range].metaui:focus::-webkit-slider-runnable-track {
+  background: #0079D8; }
+
+input[type=range].metaui::-moz-range-track {
+  width: 100%;
+  height: 0.125rem;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border: 0.2px solid #010101; }
+
+input[type=range].metaui::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  background: #fff;
+  cursor: pointer; }
+
+input[type=range].metaui::-ms-track {
+  width: 100%;
+  height: 0.125rem;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent; }
+
+input[type=range].metaui::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+
+input[type=range].metaui::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+
+input[type=range].metaui::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 0.125rem;
+  width: 16px;
+  background: #fff;
+  cursor: pointer; }
+
+input[type=range].metaui:focus::-ms-fill-lower {
+  background: #3071a9; }
+
+input[type=range].metaui:focus::-ms-fill-upper {
+  background: #367ebd; }
+
+input[type=range].vertical {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  transform: rotate(270deg); }
 
 /*# sourceMappingURL=metro.css.map*/

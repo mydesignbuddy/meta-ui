@@ -1,0 +1,92 @@
+button.metaui,
+input[type="button"].metaui,
+input[type="submit"].metaui,
+input[type="reset"].metaui,
+a.metaui.button {
+  padding: 0 1rem;
+  height: 2.125rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ccc;
+  border: 2px solid #ccc;
+  color: #262626;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875rem;
+  margin: 0.15625rem 0;
+  outline: none;
+  &:hover {
+    border: 2px solid #6B6B6B;
+  }
+  &:active {
+    border: 2px solid #9A9A9A;
+    background-color: #9A9A9A;
+  }
+  &:disabled,
+  &.disabled {
+    background-color: #eaeaea;
+    color: #bebebe;
+    cursor: default;
+    border-color: transparent;
+  }
+  &:focus {
+    background-color: #0079D8;
+    color: $color-default-light;
+    border-color: #0079D8;
+  }
+  &.mini {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.625rem;
+    height: 1.4rem;
+    line-height: 0rem;
+  }
+  &.small {
+    font-size: 0.7rem;
+    padding: 0 0.625rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+  }
+  &.large {
+    height: 2.55rem;
+    font-size: 1.05rem;
+    line-height: 2.55rem;
+  }
+  &.primary {
+    background: #0079D8;
+    color: $color-default-light;
+    border-color: #0079D8;
+  }
+  &.success {
+    background: #60a917;
+    color: $color-default-light;
+    border-color: #60a917;
+  }
+  &.info {
+    background: #59cde2;
+    color: $color-default-light;
+    border-color: #59cde2;
+  }
+  &.danger,
+  &.alert {
+    background: #ce352c;
+    color: $color-default-light;
+    border-color: #ce352c;
+  }
+  &.warning {
+    background: #fa6800;
+    color: $color-default-light;
+    border-color: #fa6800;
+  }
+}
+a.metaui.button {
+  padding-top: 0.5rem;
+  height: 1.5rem;
+  &.mini {
+    line-height: 1rem;
+    height: 0.9rem;
+  }
+  &.large {
+    height: 1.95rem;
+    line-height: 1.5rem;
+  }
+}

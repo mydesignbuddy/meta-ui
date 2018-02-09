@@ -8,18 +8,206 @@
 <body class="metaui-container" style="padding: 20px;">
 
   <div class="metaui-window">
-    <div class="metaui-titlebar">
-      <div class="metaui-title">
-        Window Title
+    <div class="titlebar">
+      <div class="icon self-service-kiosk"></div>
+      <div class="title">Window Title
       </div>
-      <div class="metaui-actions">
-        <div class="metaui-titlebar-button minimize"></div>
-        <div class="metaui-titlebar-button maximize"></div>
-        <div class="metaui-titlebar-button close"></div>
+      <div class="actions">
+        <div class="titlebar-button minimize"></div>
+        <div class="titlebar-button maximize"></div>
+        <div class="titlebar-button close"></div>
       </div>
     </div>
     <div class="metaui-content">
-      Window Content
+
+      <form>
+        Text Field
+        <input class="metaui" type="text" />
+        <br /> Password Field
+        <input class="metaui" type="password" />
+        <br />
+
+        <textarea class="metaui">Text Area</textarea>
+        <br/>
+
+        Text Field (disabled)
+        <input class="metaui" type="text" disabled />
+        <br /> Password Field
+        <input class="metaui" type="password" disabled />
+        <br />
+
+        <textarea class="metaui" disabled>Text Area</textarea>
+        <br/>
+
+        <hr />
+
+
+        <label class="metaui radio">One
+            <input type="radio" name="radiogroup1" checked="checked" />
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="metaui radio">Two
+            <input type="radio" name="radiogroup1" />
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="metaui radio">Three
+            <input type="radio" name="radiogroup1" disabled = "disabled" />
+            <span class="checkmark"></span>
+        </label>
+
+
+        <label class="metaui radio inline">One
+            <input type="radio" name="radiogroup2" checked="checked" />
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="metaui radio inline">Two
+            <input type="radio" name="radiogroup2" />
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="metaui radio inline">Three
+            <input type="radio" name="radiogroup2" disabled = "disabled" />
+            <span class="checkmark"></span>
+        </label>
+
+        <hr />
+
+        <label class="metaui checkbox">One
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="metaui checkbox">Two
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="metaui checkbox">Three
+          <input type="checkbox" disabled="disabled" />
+          <span class="checkmark"></span>
+        </label>
+
+        <br />
+        <label class="metaui checkbox inline indeterminate">One
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="metaui checkbox inline indeterminate">Two
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="metaui checkbox inline indeterminate">Three
+          <input type="checkbox" disabled="disabled" />
+          <span class="checkmark"></span>
+        </label>
+
+        <hr />
+
+        <input class="metaui" type="button" value="Input Button" />
+        <button class="metaui">Button Tag</button>
+        <a class="metaui button">Button Href</a>
+        |
+        <input class="metaui" type="button" value="Input Button" disabled />
+        <button class="metaui" disabled>Button Tag</button>
+        <a class="metaui button disabled">Button Href</a>
+
+        <br />
+
+        <input class="metaui" type="submit" value="Submit" />
+        <input class="metaui" type="submit" value="Submit" disabled />
+        <input class="metaui" type="reset" value="Reset" />
+        <input class="metaui" type="reset" value="Reset" disabled />
+
+        <br />
+
+        <input class="metaui mini" type="button" value="Input Button (mini)" />
+        <input class="metaui small" type="button" value="Input Button (small)" />
+        <input class="metaui" type="button" value="Input Button (default)" />
+        <input class="metaui large" type="button" value="Input Button (large)" />
+        <br />
+
+        <button class="metaui mini">Button Tag (mini)</button>
+        <button class="metaui small">Button Tag (small)</button>
+        <button class="metaui">Button Tag (default)</button>
+        <button class="metaui large">Button Tag (large)</button>
+        <br />
+
+        <a class="metaui button mini">Button Href (mini)</a>
+        <a class="metaui button small">Button Href (small)</a>
+        <a class="metaui button">Button Href (default)</a>
+        <a class="metaui button large">Button Href (large)</a>
+
+        <br />
+
+        <button class="metaui large">Default</button>
+        <button class="metaui large primary">Primary</button>
+        <button class="metaui large success">Success</button>
+        <button class="metaui large info">Info</button>
+        <button class="metaui large danger">Danger / Alert</button>
+        <button class="metaui large warning">Warning</button>
+
+        <hr />
+        <label class="metaui file">
+          Upload file
+          <input class="metaui" type="file" />
+        </label>
+
+        <hr />
+        <label class="metaui file">
+          Upload file(s)
+          <input class="metaui" type="file" multiple="multiple" />
+        </label>
+
+        <br />Color:
+        <input class="metaui" type="color" name="favcolor" />
+        <br /> Date:
+        <input class="metaui" type="date" name="bday" />
+        <br />Time:
+        <input class="metaui" type="time" name="usr_time" />
+        <br /> Email:
+        <input class="metaui" type="email" name="email" />
+        <br /> Month:
+        <input class="metaui" type="month" name="bdaymonth" />
+        <br />Week:
+        <input class="metaui" type="week" name="week_year">
+        <br/> Quantity (between 1 and 5):
+        <input class="metaui" type="number" name="quantity" min="1" max="5" />
+        <br /> Range:
+        <input class="metaui" type="range" name="points" min="0" max="10" />
+
+        <input class="metaui" type="range" list="tickmarks" />
+
+        <input class="metaui vertical" type="range" />
+
+        <datalist id="tickmarks">
+          <option value="0" />
+          <option value="10" />
+          <option value="20" />
+          <option value="30" />
+          <option value="40" />
+          <option value="50" />
+          <option value="60" />
+          <option value="70" />
+          <option value="80" />
+          <option value="90" />
+          <option value="100" />
+        </datalist>
+        <br />
+
+        <br /> Search:
+        <input class="metaui" type="search" name="googlesearch" />
+        <br /> Telephone:
+        <input class="metaui" type="tel" name="usrtel" />
+        <br />URL:
+        <input class="metaui" type="url" name="homepage" />
+        <br />
+
+      </form>
     </div>
   </div>
 

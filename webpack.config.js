@@ -29,8 +29,12 @@ module.exports = {
           fallback: 'style-loader',
           use: ['css-loader','sass-loader']
         })
-      }
-    ]
+      },
+      {
+        test: /\.svg$/,
+        loader: 'file-loader'
+      },
+    ],
   },
   plugins: [
     new ExtractTextPlugin({ // define where to save the file

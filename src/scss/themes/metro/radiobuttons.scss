@@ -1,0 +1,75 @@
+/* Customize the label (the metaui) */
+.metaui.radio {
+  display: block;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  padding-top: 0.125rem;
+  margin-bottom: 0.75rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &.inline {
+    display: inline-block;
+  }
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    &:checked ~ .checkmark {
+      background-color: $color-default-light;
+      border-color: $color-dark-default;
+    }
+    &:checked ~ .checkmark:after {
+      display: block;
+    }
+    &:disabled ~ .checkmark, &:disabled:hover ~ .checkmark {
+      cursor: default;
+      border-color: #CCCCCD;
+      background-color: inherit;
+    }
+  }
+  &:disabled ~ input[type="radio"]:disabled {
+    color: #CCCCCD;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: $color-default-light;
+    border: 2px solid $color-dark-default;
+    border-radius: 50%;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 3px;
+      left: 3px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: $color-default;
+    }
+  }
+  &:hover input[type="radio"] ~ .checkmark,
+  input[type="radio"]:focus ~ .checkmark {
+    border-color: $primary-color;
+    cursor: pointer;
+  }
+  &:hover input[type="radio"]:checked ~ .checkmark,
+  input[type="radio"]:checked:focus ~ .checkmark {
+    border-color: $primary-color;
+    &:after {
+      background-color: $primary-color;
+    }
+  }
+  &:hover input ~ .checkmark {
+    border-color: $primary-color;
+  }
+}

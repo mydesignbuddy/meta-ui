@@ -1,0 +1,94 @@
+$slider-width: 0.125rem;
+$slider-handler-width: 0.5rem;
+$slider-handler-heigth: 1.5rem;
+
+input[type=range].metaui {
+  -webkit-appearance: none;
+  margin: 18px 0;
+}
+input[type=range].metaui:focus {
+  outline: none;
+}
+input[type=range].metaui::-webkit-slider-runnable-track {
+  width: 100%;
+  height: $slider-width;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #bebebe;
+  border: 0;
+}
+input[type=range].metaui::-webkit-slider-thumb {
+  border: 0;
+  height: $slider-handler-heigth;
+  width: $slider-handler-width;
+  background: #0079D8;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -0.75rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  border-radius: 2rem;
+}
+input[type=range].metaui:focus::-webkit-slider-thumb {
+  background: #0079D8;
+}
+input[type=range].metaui:focus::-webkit-slider-runnable-track {
+  background: #0079D8;
+}
+input[type=range].metaui::-moz-range-track {
+  width: 100%;
+  height: $slider-width;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border: 0.2px solid #010101;
+}
+input[type=range].metaui::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  background: $color-default-light;
+  cursor: pointer;
+}
+input[type=range].metaui::-ms-track {
+  width: 100%;
+  height: $slider-width;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range].metaui::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range].metaui::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range].metaui::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: $slider-width;
+  width: 16px;
+  background: $color-default-light;
+  cursor: pointer;
+}
+input[type=range].metaui:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range].metaui:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+
+input[type=range].vertical {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
