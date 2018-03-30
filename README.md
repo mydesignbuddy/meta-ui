@@ -18,7 +18,7 @@ Because there are almost no great UI frameworks that will make Hybird apps look 
 * Create documentation
 
 
-## Roadmap (after versoin 1.0)
+## Roadmap (after version 1.0)
 * MetaUI Web Components (StencilJS or Polymer)
 * Boilerplate Electron project w/ MetaUI
   * Simple
