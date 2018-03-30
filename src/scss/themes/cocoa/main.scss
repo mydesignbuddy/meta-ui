@@ -1,2 +1,17 @@
+@import '../../../../node_modules/normalize.css/normalize.css';
 @import '../base/main.scss';
+@import './vars.scss';
+
+@import './common.scss';
+
 @import './window.scss';
+@import './buttons.scss';
+@import './checkboxes.scss';
+@import './radiobuttons.scss';
+@import './inputs.scss';
+@import './dropdowns.scss';
+@import './progress.scss';
+@import './meters.scss';
+@import './spinners.scss';
+
+@import './sliders.scss';

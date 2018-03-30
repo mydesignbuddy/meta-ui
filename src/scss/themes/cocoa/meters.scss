@@ -1,0 +1,38 @@
+meter.metaui {
+  -webkit-appearance: none;
+  appearance: none;
+  &::-webkit-meter-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    background-color: #dbdbdb;
+    border: 1px solid #c0c0c0;
+  }
+  &::-webkit-meter-optimum-value, &::-webkit-meter-suboptimum-value, &::-webkit-meter-even-less-good-value {
+    background: #99999e;
+    border: 1px solid #858589;
+    margin: -1px;
+    margin-left: -2px;
+    height: 6px;
+
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    -webkit-border-top-left-radius: 500px;
+    -webkit-border-bottom-left-radius: 500px;
+    -moz-border-radius-topleft: 500px;
+    -moz-border-radius-bottomleft: 500px;
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px;
+  }
+
+  &::-webkit-meter-optimum-value {
+    background: green;
+  }
+  &::-webkit-meter-suboptimum-value {
+    background: yellow;
+  }
+  &::-webkit-meter-even-less-good-value {
+    background: red;
+  }
+}

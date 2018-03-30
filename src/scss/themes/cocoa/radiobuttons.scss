@@ -5,7 +5,7 @@
   margin-right: 0.5rem;
   position: relative;
   padding-left: 1.5rem;
-  padding-top: 0.125rem;
+  padding-top: 0.3rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -17,8 +17,10 @@
     position: absolute;
     opacity: 0;
     &:checked ~ .checkmark {
-      background-color: $color-default-light;
-      border-color: $color-dark-default;
+      background-color: #99999e;
+      border-color: #c0c0c0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
     }
     &:checked ~ .checkmark:after {
       display: block;
@@ -40,57 +42,60 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 15px;
-    width: 15px;
-    background-color: $color-default-light;
-    border: 2px solid $color-dark-default;
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    border: 1px solid #c0c0c0;
     border-radius: 50%;
+    -webkit-box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.0525);
+    margin: 3px;
     &:after {
       content: "";
       position: absolute;
       display: none;
-      top: 3px;
-      left: 3px;
-      width: 9px;
-      height: 9px;
+      top: 4px;
+      left: 4px;
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
-      background: $color-default;
+      background: #fff;
+      -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
     }
   }
-  &:hover input[type="radio"] ~ .checkmark,
   input[type="radio"]:focus ~ .checkmark {
-    border-color: $primary-color;
     cursor: pointer;
+    border-color: #bdbcbf;
+    border-width: 4px;
+    margin: 0;
   }
-  &:hover input[type="radio"]:checked ~ .checkmark,
   input[type="radio"]:checked:focus ~ .checkmark {
-    border-color: $primary-color;
-    &:after {
-      background-color: $primary-color;
-    }
-  }
-  &:hover input ~ .checkmark {
-    border-color: $primary-color;
+    border-color: #bdbcbf;
+    border-width: 4px;
+    margin: 0;
   }
   &.mini {
     font-size: 0.6rem;
-    padding-left: 1rem;
+    padding-left: 1.125rem;
+    padding-top: 0.25rem;
     .checkmark {
       top: 0;
       left: 0;
       height: 9px;
       width: 9px;
       &:after {
-        top: 2px;
-        left: 2px;
-        width: 5px;
-        height: 5px;
+        top: 3px;
+        left: 3px;
+        width: 3px;
+        height: 3px;
       }
     }
   }
   &.small {
     font-size: 0.7rem;
-    padding-left: 1.25rem;
+    padding-left: 1.3rem;
+    padding-top: 0.25rem;
     .checkmark {
       top: 0;
       left: 0;
@@ -107,16 +112,17 @@
   &.large {
     height: 2.55rem;
     padding-left: 1.75rem;
+    padding-top: 0.4rem;
     .checkmark {
       top: 0;
       left: 0;
       height: 18px;
       width: 18px;
       &:after {
-        top: 3px;
-        left: 3px;
-        width: 12px;
-        height: 12px;
+        top: 5px;
+        left: 5px;
+        width: 8px;
+        height: 8px;
       }
     }
   }

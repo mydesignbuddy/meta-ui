@@ -1,0 +1,156 @@
+progress.metaui {
+  &:not([value]) {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    border: 1px solid #858589;
+    background: #99999e;
+    background: linear-gradient(
+      to right,
+      #99999e,
+      #b8b8bd,
+      #99999e,
+      #b8b8bd,
+      #99999e
+    );
+    background-size: 200% 100%;
+    -webkit-animation: GradientAnimate 2500ms linear infinite;
+    -moz-animation: GradientAnimate 2500ms linear infinite;
+    animation: GradientAnimate 2500ms linear infinite;
+    &::-webkit-progress-bar {
+      display: none;
+    }
+  }
+  &[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    background: none;
+    &::-webkit-progress-bar {
+      -webkit-border-radius: 500px;
+      -moz-border-radius: 500px;
+      border-radius: 500px;
+      background-color: #dbdbdb;
+      border: 1px solid #c0c0c0;
+    }
+    &::-webkit-progress-value {
+      background: #99999e;
+      border: 1px solid #858589;
+      margin: -1px;
+      margin-left: -2px;
+      height: 6px;
+
+      background-size: 35px 20px, 100% 100%, 100% 100%;
+      -webkit-border-top-left-radius: 500px;
+      -webkit-border-bottom-left-radius: 500px;
+      -moz-border-radius-topleft: 500px;
+      -moz-border-radius-bottomleft: 500px;
+      border-top-left-radius: 500px;
+      border-bottom-left-radius: 500px;
+    }
+  }
+  &[value="99"],
+  &[value="100"] {
+    &::-webkit-progress-value {
+      -webkit-border-radius: 500px;
+      -moz-border-radius: 500px;
+      border-radius: 500px;
+    }
+  }
+  &[value="100"] {
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    background: #99999e;
+    border: 1px solid #858589;
+    &::-webkit-progress-value,
+    &::-webkit-progress-bar {
+      display: none;
+    }
+  }
+}
+
+@-webkit-keyframes GradientAnimate {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-moz-keyframes GradientAnimate {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes GradientAnimate {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+$barColor: #858589;
+$overlayColor: #fffde8;
+$backColor: #ececec;
+
+.metaui.progress.radial {
+  margin-right: 30px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid $barColor; // remove gradient color
+  background-color: red; // default 100%
+  /* -------------------------------------
+  * Optional centered circle w/text
+  * ------------------------------------- */
+  .overlay {
+    display: none;
+  }
+}
+
+/* -------------------------------------
+* Mixin for progress-% class
+* ------------------------------------- */
+
+$step: 1; // step of % for created classes
+
+$loops: round(100 / $step);
+$increment: 360 / $loops;
+$half: round($loops / 2);
+@for $i from 0 through $loops {
+  .progress-#{$i*$step} {
+    @if $i < $half {
+      $nextdeg: 90deg + ($increment * $i);
+      background-image: linear-gradient(
+          90deg,
+          $backColor 50%,
+          transparent 50%,
+          transparent
+        ),
+        linear-gradient($nextdeg, $barColor 50%, $backColor 50%, $backColor);
+    } @else {
+      $nextdeg: -90deg + ($increment * ($i - $half));
+      background-image: linear-gradient(
+          $nextdeg,
+          $barColor 50%,
+          transparent 50%,
+          transparent
+        ),
+        linear-gradient(270deg, $barColor 50%, $backColor 50%, $backColor);
+    }
+  }
+}

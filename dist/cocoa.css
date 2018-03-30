@@ -1,7 +1,1570 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
 .metaui-window {
   display: block; }
 
+.metaui-container {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.1;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ececec; }
+
+.metaui-content {
+  background-color: #ececec; }
+
+hr {
+  border: 1px solid #e3e3e3; }
+
 .metaui-window {
-  border: 1px solid red; }
+  display: block;
+  position: relative;
+  height: auto;
+  width: auto;
+  background-color: #fff;
+  padding-bottom: 0.0125rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #bebebe;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
+  .metaui-window .titlebar {
+    position: relative;
+    border-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    box-shadow: inset 0 1px 0 #f5f4f5;
+    background-color: #e8e6e8;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e8e6e8), color-stop(100%, #d1cfd1));
+    background-image: -webkit-linear-gradient(top, #e8e6e8 0, #d1cfd1 100%);
+    background-image: linear-gradient(to bottom, #e8e6e8 0, #d1cfd1 100%);
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    flex-direction: row-reverse;
+    height: 10px;
+    padding: 6px; }
+    .metaui-window .titlebar .title {
+      font-size: 0.875rem;
+      font-style: normal;
+      padding-right: 70px;
+      flex-grow: 1;
+      text-align: center; }
+  .metaui-window .actions {
+    display: flex;
+    flex-direction: row-reverse;
+    color: transparent; }
+    .metaui-window .actions:hover {
+      color: #000; }
+    .metaui-window .actions .titlebar-button {
+      width: 0.625rem;
+      height: 0.625rem;
+      border: 1px solid #717176;
+      background-color: #8d8d92;
+      margin-right: 0.5rem;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      display: flex; }
+      .metaui-window .actions .titlebar-button:after {
+        border: 0;
+        position: relative;
+        display: block;
+        left: 50%;
+        font-size: 0.9rem;
+        font-weight: 300; }
+    .metaui-window .actions .titlebar-button.minimize:after {
+      content: "_";
+      margin-top: 0.15rem;
+      margin-left: -0.22rem;
+      bottom: 0.6rem;
+      width: 0.625rem;
+      line-height: 0.75rem; }
+    .metaui-window .actions .titlebar-button.maximize {
+      order: -1; }
+      .metaui-window .actions .titlebar-button.maximize:after {
+        content: "+";
+        margin-top: 0.45rem;
+        margin-left: -0.27rem;
+        bottom: 0.6rem;
+        width: 0.625rem;
+        line-height: 0.75rem; }
+    .metaui-window .actions .titlebar-button.close:after {
+      content: "\D7";
+      margin-top: 0.45rem;
+      margin-left: -0.27rem;
+      bottom: 0.6rem;
+      width: 0.625rem;
+      border-width: 0;
+      line-height: 0.75rem; }
+  .metaui-window .metaui-content {
+    margin: 0;
+    border: 1px #e9e9e9 solid;
+    padding: 1rem;
+    -webkit-border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px; }
+
+button.metaui,
+input[type="button"].metaui,
+input[type="submit"].metaui,
+input[type="reset"].metaui,
+a.metaui.button {
+  color: #262626;
+  display: inline-block;
+  padding: 3px 8px;
+  margin-bottom: 0;
+  line-height: 1.4;
+  white-space: nowrap;
+  background-image: none;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06);
+  outline: 0;
+  cursor: pointer; }
+  button.metaui:hover, button.metaui:active,
+  input[type="button"].metaui:hover,
+  input[type="button"].metaui:active,
+  input[type="submit"].metaui:hover,
+  input[type="submit"].metaui:active,
+  input[type="reset"].metaui:hover,
+  input[type="reset"].metaui:active,
+  a.metaui.button:hover,
+  a.metaui.button:active {
+    border-color: #b1b1b1;
+    color: #000000; }
+  button.metaui:disabled, button.metaui.disabled,
+  input[type="button"].metaui:disabled,
+  input[type="button"].metaui.disabled,
+  input[type="submit"].metaui:disabled,
+  input[type="submit"].metaui.disabled,
+  input[type="reset"].metaui:disabled,
+  input[type="reset"].metaui.disabled,
+  a.metaui.button:disabled,
+  a.metaui.button.disabled {
+    background-color: #f1f1f1;
+    color: #b4b4b9;
+    cursor: default;
+    border-color: #d1d1d1; }
+  button.metaui:focus,
+  input[type="button"].metaui:focus,
+  input[type="submit"].metaui:focus,
+  input[type="reset"].metaui:focus,
+  a.metaui.button:focus {
+    color: #fff;
+    border-color: #3f3f45;
+    background: #55555a;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #55555a 0%, #939398 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #55555a 0%, #939398 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #55555a 0%, #939398 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#55555a", endColorstr="#939398", GradientType=0 );
+    /* IE6-9 */ }
+  button.metaui.mini,
+  input[type="button"].metaui.mini,
+  input[type="submit"].metaui.mini,
+  input[type="reset"].metaui.mini,
+  a.metaui.button.mini {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.625rem;
+    height: 1.4rem;
+    line-height: 0rem; }
+  button.metaui.small,
+  input[type="button"].metaui.small,
+  input[type="submit"].metaui.small,
+  input[type="reset"].metaui.small,
+  a.metaui.button.small {
+    font-size: 0.7rem;
+    padding: 0 0.625rem;
+    height: 1.7rem;
+    line-height: 1.7rem; }
+  button.metaui.large,
+  input[type="button"].metaui.large,
+  input[type="submit"].metaui.large,
+  input[type="reset"].metaui.large,
+  a.metaui.button.large {
+    height: 2.55rem;
+    font-size: 1.05rem;
+    line-height: 2rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem; }
+  button.metaui.primary,
+  input[type="button"].metaui.primary,
+  input[type="submit"].metaui.primary,
+  input[type="reset"].metaui.primary,
+  a.metaui.button.primary {
+    background: #0079d8;
+    color: #fff;
+    border-color: #0079d8; }
+  button.metaui.success,
+  input[type="button"].metaui.success,
+  input[type="submit"].metaui.success,
+  input[type="reset"].metaui.success,
+  a.metaui.button.success {
+    background: #60a917;
+    color: #fff;
+    border-color: #60a917; }
+  button.metaui.info,
+  input[type="button"].metaui.info,
+  input[type="submit"].metaui.info,
+  input[type="reset"].metaui.info,
+  a.metaui.button.info {
+    background: #59cde2;
+    color: #fff;
+    border-color: #59cde2; }
+  button.metaui.danger, button.metaui.alert,
+  input[type="button"].metaui.danger,
+  input[type="button"].metaui.alert,
+  input[type="submit"].metaui.danger,
+  input[type="submit"].metaui.alert,
+  input[type="reset"].metaui.danger,
+  input[type="reset"].metaui.alert,
+  a.metaui.button.danger,
+  a.metaui.button.alert {
+    background: #ce352c;
+    color: #fff;
+    border-color: #ce352c; }
+  button.metaui.warning,
+  input[type="button"].metaui.warning,
+  input[type="submit"].metaui.warning,
+  input[type="reset"].metaui.warning,
+  a.metaui.button.warning {
+    background: #fa6800;
+    color: #fff;
+    border-color: #fa6800; }
+
+a.metaui.button {
+  padding-top: 0.5rem;
+  background: #fff;
+  height: 1.4rem;
+  padding: 3px 8px 0px 7px; }
+  a.metaui.button.mini {
+    line-height: 1rem;
+    height: 0.9rem; }
+  a.metaui.button.large {
+    height: 1.95rem;
+    line-height: 1.5rem; }
+
+.metaui.checkbox {
+  display: block;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  padding-top: 0.3rem;
+  margin-bottom: 0.75rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .metaui.checkbox.inline {
+    display: inline-block; }
+  .metaui.checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0; }
+    .metaui.checkbox input[type="checkbox"]:checked ~ .checkmark {
+      background-color: #99999e;
+      border-color: #c0c0c0;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .metaui.checkbox input[type="checkbox"]:checked ~ .checkmark:after {
+      display: block; }
+    .metaui.checkbox input[type="checkbox"]:disabled ~ .checkmark,
+    .metaui.checkbox input[type="checkbox"]:disabled:hover ~ .checkmark {
+      cursor: default;
+      border-color: #cccccd;
+      background-color: #ececec; }
+  .metaui.checkbox:hover {
+    cursor: pointer; }
+  .metaui.checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    border: 1px solid #c0c0c0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 3px;
+    -webkit-box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.0525); }
+    .metaui.checkbox .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 5px;
+      top: 1px;
+      width: 3px;
+      height: 8px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(37deg);
+      -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125); }
+  .metaui.checkbox input[type="checkbox"]:focus ~ .checkmark {
+    cursor: pointer;
+    border-color: #bdbcbf;
+    border-width: 4px;
+    margin: 0;
+    border-radius: 5px; }
+  .metaui.checkbox input[type="checkbox"]:checked:focus ~ .checkmark {
+    border-color: #bdbcbf;
+    border-width: 4px;
+    margin: 0;
+    border-radius: 5px; }
+  .metaui.checkbox:after {
+    content: "";
+    position: absolute;
+    display: none; }
+  .metaui.checkbox.indeterminate .checkmark:after {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    top: 6px;
+    left: 2px;
+    width: 8px;
+    height: 0.0125px; }
+
+/* Customize the label (the metaui) */
+.metaui.radio {
+  display: block;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  padding-top: 0.3rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .metaui.radio.inline {
+    display: inline-block; }
+  .metaui.radio input[type="radio"] {
+    position: absolute;
+    opacity: 0; }
+    .metaui.radio input[type="radio"]:checked ~ .checkmark {
+      background-color: #99999e;
+      border-color: #c0c0c0;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .metaui.radio input[type="radio"]:checked ~ .checkmark:after {
+      display: block; }
+    .metaui.radio input[type="radio"]:disabled ~ .checkmark,
+    .metaui.radio input[type="radio"]:disabled:hover ~ .checkmark {
+      cursor: default;
+      border-color: #cccccd;
+      background-color: inherit; }
+  .metaui.radio:disabled ~ input[type="radio"]:disabled {
+    color: #cccccd; }
+  .metaui.radio:hover {
+    cursor: pointer; }
+  .metaui.radio .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    border: 1px solid #c0c0c0;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.0525);
+    margin: 3px; }
+    .metaui.radio .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 4px;
+      left: 4px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #fff;
+      -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125); }
+  .metaui.radio input[type="radio"]:focus ~ .checkmark {
+    cursor: pointer;
+    border-color: #bdbcbf;
+    border-width: 4px;
+    margin: 0; }
+  .metaui.radio input[type="radio"]:checked:focus ~ .checkmark {
+    border-color: #bdbcbf;
+    border-width: 4px;
+    margin: 0; }
+  .metaui.radio.mini {
+    font-size: 0.6rem;
+    padding-left: 1.125rem;
+    padding-top: 0.25rem; }
+    .metaui.radio.mini .checkmark {
+      top: 0;
+      left: 0;
+      height: 9px;
+      width: 9px; }
+      .metaui.radio.mini .checkmark:after {
+        top: 3px;
+        left: 3px;
+        width: 3px;
+        height: 3px; }
+  .metaui.radio.small {
+    font-size: 0.7rem;
+    padding-left: 1.3rem;
+    padding-top: 0.25rem; }
+    .metaui.radio.small .checkmark {
+      top: 0;
+      left: 0;
+      height: 12px;
+      width: 12px; }
+      .metaui.radio.small .checkmark:after {
+        top: 3px;
+        left: 3px;
+        width: 6px;
+        height: 6px; }
+  .metaui.radio.large {
+    height: 2.55rem;
+    padding-left: 1.75rem;
+    padding-top: 0.4rem; }
+    .metaui.radio.large .checkmark {
+      top: 0;
+      left: 0;
+      height: 18px;
+      width: 18px; }
+      .metaui.radio.large .checkmark:after {
+        top: 5px;
+        left: 5px;
+        width: 8px;
+        height: 8px; }
+
+input[type="text"].metaui,
+input[type="password"].metaui,
+input[type="file"].metaui,
+input[type="color"].metaui,
+input[type="date"].metaui,
+input[type="time"].metaui,
+input[type="email"].metaui,
+input[type="month"].metaui,
+input[type="week"].metaui,
+input[type="number"].metaui,
+input[type="search"].metaui,
+input[type="tel"].metaui,
+input[type="url"].metaui,
+textarea.metaui {
+  line-height: 1.25;
+  background-color: #fff;
+  border: 1px solid #aaaaaa;
+  outline: 0;
+  margin: 3px;
+  padding: 3px 2px 1px 2px; }
+  input[type="text"].metaui:disabled,
+  input[type="password"].metaui:disabled,
+  input[type="file"].metaui:disabled,
+  input[type="color"].metaui:disabled,
+  input[type="date"].metaui:disabled,
+  input[type="time"].metaui:disabled,
+  input[type="email"].metaui:disabled,
+  input[type="month"].metaui:disabled,
+  input[type="week"].metaui:disabled,
+  input[type="number"].metaui:disabled,
+  input[type="search"].metaui:disabled,
+  input[type="tel"].metaui:disabled,
+  input[type="url"].metaui:disabled,
+  textarea.metaui:disabled {
+    background-color: #ebebe4;
+    border-color: #cccccd;
+    color: #cccccd; }
+  input[type="text"].metaui:focus,
+  input[type="password"].metaui:focus,
+  input[type="file"].metaui:focus,
+  input[type="color"].metaui:focus,
+  input[type="date"].metaui:focus,
+  input[type="time"].metaui:focus,
+  input[type="email"].metaui:focus,
+  input[type="month"].metaui:focus,
+  input[type="week"].metaui:focus,
+  input[type="number"].metaui:focus,
+  input[type="search"].metaui:focus,
+  input[type="tel"].metaui:focus,
+  input[type="url"].metaui:focus,
+  textarea.metaui:focus {
+    border-color: #bdbcbf;
+    border-width: 4px;
+    margin: 0;
+    border-radius: 5px; }
+
+input[type="color"].metaui {
+  -webkit-appearance: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  padding: 0; }
+
+input[type="color"].metaui::-webkit-color-swatch-wrapper {
+  padding: 0; }
+
+input[type="color"].metaui::-webkit-color-swatch {
+  border: none; }
+
+.metaui.dropdown {
+  position: relative; }
+  .metaui.dropdown select {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #bfbfbf;
+    margin: 3px;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.0525);
+    outline: none;
+    padding: 0.25rem 2rem 0.25rem 0.5rem; }
+    .metaui.dropdown select:focus {
+      border-color: #bdbcbf;
+      border-width: 4px;
+      margin: 0;
+      border-radius: 5px; }
+    .metaui.dropdown select:disabled {
+      background-color: #f1f1f1;
+      color: #b4b4b9;
+      cursor: default;
+      border-color: #d1d1d1; }
+    .metaui.dropdown select:disabled ~ .button {
+      background: #b2b2b7; }
+  .metaui.dropdown .button {
+    content: " ";
+    position: absolute;
+    display: inline-block;
+    top: -4px;
+    right: 0;
+    width: 21px;
+    height: 24px;
+    margin-right: 4px;
+    border-color: #3f3f45;
+    background: #b2b2b7;
+    background: -moz-linear-gradient(top, #b2b2b7 0%, #919196 100%);
+    background: -webkit-linear-gradient(top, #b2b2b7 0%, #919196 100%);
+    background: linear-gradient(to bottom, #b2b2b7 0%, #919196 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#b2b2b7", endColorstr="#919196", GradientType=0 );
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    pointer-events: none; }
+    .metaui.dropdown .button:after {
+      content: " ";
+      position: absolute;
+      display: block;
+      top: 7px;
+      right: 6px;
+      width: 6px;
+      height: 6px;
+      border: 2px solid #fff;
+      transform: rotate(45deg);
+      -webkit-clip-path: polygon(75% 0, 0 0, 0% 100%, 100% 100%, 100% 25%, 25% 100%, 0 100%, 0 75%);
+      clip-path: polygon(75% 0, 0 0, 0% 100%, 100% 100%, 100% 25%, 25% 100%, 0 100%, 0 75%); }
+
+progress.metaui:not([value]) {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+  border: 1px solid #858589;
+  background: #99999e;
+  background: linear-gradient(to right, #99999e, #b8b8bd, #99999e, #b8b8bd, #99999e);
+  background-size: 200% 100%;
+  -webkit-animation: GradientAnimate 2500ms linear infinite;
+  -moz-animation: GradientAnimate 2500ms linear infinite;
+  animation: GradientAnimate 2500ms linear infinite; }
+  progress.metaui:not([value])::-webkit-progress-bar {
+    display: none; }
+
+progress.metaui[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: none; }
+  progress.metaui[value]::-webkit-progress-bar {
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    background-color: #dbdbdb;
+    border: 1px solid #c0c0c0; }
+  progress.metaui[value]::-webkit-progress-value {
+    background: #99999e;
+    border: 1px solid #858589;
+    margin: -1px;
+    margin-left: -2px;
+    height: 6px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    -webkit-border-top-left-radius: 500px;
+    -webkit-border-bottom-left-radius: 500px;
+    -moz-border-radius-topleft: 500px;
+    -moz-border-radius-bottomleft: 500px;
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px; }
+
+progress.metaui[value="99"]::-webkit-progress-value, progress.metaui[value="100"]::-webkit-progress-value {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px; }
+
+progress.metaui[value="100"] {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+  background: #99999e;
+  border: 1px solid #858589; }
+  progress.metaui[value="100"]::-webkit-progress-value, progress.metaui[value="100"]::-webkit-progress-bar {
+    display: none; }
+
+@-webkit-keyframes GradientAnimate {
+  from {
+    background-position: 100% 0; }
+  to {
+    background-position: 0 0; } }
+
+@-moz-keyframes GradientAnimate {
+  from {
+    background-position: 100% 0; }
+  to {
+    background-position: 0 0; } }
+
+@keyframes GradientAnimate {
+  from {
+    background-position: 100% 0; }
+  to {
+    background-position: 0 0; } }
+
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+.metaui.progress.radial {
+  margin-right: 30px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #858589;
+  background-color: red;
+  /* -------------------------------------
+  * Optional centered circle w/text
+  * ------------------------------------- */ }
+  .metaui.progress.radial .overlay {
+    display: none; }
+
+/* -------------------------------------
+* Mixin for progress-% class
+* ------------------------------------- */
+.progress-0 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(90deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-1 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(93.6deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-2 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(97.2deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-3 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(100.8deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-4 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(104.4deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-5 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(108deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-6 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(111.6deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-7 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(115.2deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-8 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(118.8deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-9 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(122.4deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-10 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(126deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-11 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(129.6deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-12 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(133.2deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-13 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(136.8deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-14 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(140.4deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-15 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(144deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-16 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(147.6deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-17 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(151.2deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-18 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(154.8deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-19 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(158.4deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-20 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(162deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-21 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(165.6deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-22 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(169.2deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-23 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(172.8deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-24 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(176.4deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-25 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(180deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-26 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(183.6deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-27 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(187.2deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-28 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(190.8deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-29 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(194.4deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-30 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(198deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-31 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(201.6deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-32 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(205.2deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-33 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(208.8deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-34 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(212.4deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-35 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(216deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-36 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(219.6deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-37 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(223.2deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-38 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(226.8deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-39 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(230.4deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-40 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(234deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-41 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(237.6deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-42 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(241.2deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-43 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(244.8deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-44 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(248.4deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-45 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(252deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-46 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(255.6deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-47 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(259.2deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-48 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(262.8deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-49 {
+  background-image: linear-gradient(90deg, #ececec 50%, transparent 50%, transparent), linear-gradient(266.4deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-50 {
+  background-image: linear-gradient(-90deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-51 {
+  background-image: linear-gradient(-86.4deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-52 {
+  background-image: linear-gradient(-82.8deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-53 {
+  background-image: linear-gradient(-79.2deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-54 {
+  background-image: linear-gradient(-75.6deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-55 {
+  background-image: linear-gradient(-72deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-56 {
+  background-image: linear-gradient(-68.4deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-57 {
+  background-image: linear-gradient(-64.8deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-58 {
+  background-image: linear-gradient(-61.2deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-59 {
+  background-image: linear-gradient(-57.6deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-60 {
+  background-image: linear-gradient(-54deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-61 {
+  background-image: linear-gradient(-50.4deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-62 {
+  background-image: linear-gradient(-46.8deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-63 {
+  background-image: linear-gradient(-43.2deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-64 {
+  background-image: linear-gradient(-39.6deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-65 {
+  background-image: linear-gradient(-36deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-66 {
+  background-image: linear-gradient(-32.4deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-67 {
+  background-image: linear-gradient(-28.8deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-68 {
+  background-image: linear-gradient(-25.2deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-69 {
+  background-image: linear-gradient(-21.6deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-70 {
+  background-image: linear-gradient(-18deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-71 {
+  background-image: linear-gradient(-14.4deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-72 {
+  background-image: linear-gradient(-10.8deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-73 {
+  background-image: linear-gradient(-7.2deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-74 {
+  background-image: linear-gradient(-3.6deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-75 {
+  background-image: linear-gradient(0deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-76 {
+  background-image: linear-gradient(3.6deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-77 {
+  background-image: linear-gradient(7.2deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-78 {
+  background-image: linear-gradient(10.8deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-79 {
+  background-image: linear-gradient(14.4deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-80 {
+  background-image: linear-gradient(18deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-81 {
+  background-image: linear-gradient(21.6deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-82 {
+  background-image: linear-gradient(25.2deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-83 {
+  background-image: linear-gradient(28.8deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-84 {
+  background-image: linear-gradient(32.4deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-85 {
+  background-image: linear-gradient(36deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-86 {
+  background-image: linear-gradient(39.6deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-87 {
+  background-image: linear-gradient(43.2deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-88 {
+  background-image: linear-gradient(46.8deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-89 {
+  background-image: linear-gradient(50.4deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-90 {
+  background-image: linear-gradient(54deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-91 {
+  background-image: linear-gradient(57.6deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-92 {
+  background-image: linear-gradient(61.2deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-93 {
+  background-image: linear-gradient(64.8deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-94 {
+  background-image: linear-gradient(68.4deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-95 {
+  background-image: linear-gradient(72deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-96 {
+  background-image: linear-gradient(75.6deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-97 {
+  background-image: linear-gradient(79.2deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-98 {
+  background-image: linear-gradient(82.8deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-99 {
+  background-image: linear-gradient(86.4deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+.progress-100 {
+  background-image: linear-gradient(90deg, #858589 50%, transparent 50%, transparent), linear-gradient(270deg, #858589 50%, #ececec 50%, #ececec); }
+
+meter.metaui {
+  -webkit-appearance: none;
+  appearance: none; }
+  meter.metaui::-webkit-meter-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    background-color: #dbdbdb;
+    border: 1px solid #c0c0c0; }
+  meter.metaui::-webkit-meter-optimum-value, meter.metaui::-webkit-meter-suboptimum-value, meter.metaui::-webkit-meter-even-less-good-value {
+    background: #99999e;
+    border: 1px solid #858589;
+    margin: -1px;
+    margin-left: -2px;
+    height: 6px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    -webkit-border-top-left-radius: 500px;
+    -webkit-border-bottom-left-radius: 500px;
+    -moz-border-radius-topleft: 500px;
+    -moz-border-radius-bottomleft: 500px;
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px; }
+  meter.metaui::-webkit-meter-optimum-value {
+    background: green; }
+  meter.metaui::-webkit-meter-suboptimum-value {
+    background: yellow; }
+  meter.metaui::-webkit-meter-even-less-good-value {
+    background: red; }
+
+.metaui.spinner {
+  background-image: url(ba83f17eeb1e56e6af7958400d87f7e1.svg);
+  width: 30px;
+  height: 30px;
+  margin: -4px; }
+  .metaui.spinner.mini {
+    width: 15px;
+    height: 15px;
+    margin: -2px; }
+  .metaui.spinner.small {
+    width: 20px;
+    height: 20px;
+    margin: -3px; }
+  .metaui.spinner.large {
+    width: 50px;
+    height: 50px;
+    margin: -6px; }
+
+input[type="range"].metaui {
+  -webkit-appearance: none;
+  margin: 18px 0; }
+
+input[type="range"].metaui:focus {
+  outline: none; }
+
+input[type="range"].metaui::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+  background-color: #c0c0c0;
+  border: 1px solid #c0c0c0; }
+
+input[type="range"].metaui::-webkit-slider-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #858589;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -0.35rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
+
+input[type="range"].metaui:focus::-webkit-slider-thumb {
+  background: #0079d8; }
+
+input[type="range"].metaui:focus::-webkit-slider-runnable-track {
+  background: #0079d8; }
+
+/*input[type=range].metaui::-moz-range-track {
+  width: 100%;
+  height: $slider-width;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border: 0.2px solid #010101;
+}
+input[type=range].metaui::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  background: $color-default-light;
+  cursor: pointer;
+}
+input[type=range].metaui::-ms-track {
+  width: 100%;
+  height: $slider-width;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range].metaui::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range].metaui::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range].metaui::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: $slider-width;
+  width: 16px;
+  background: $color-default-light;
+  cursor: pointer;
+}
+input[type=range].metaui:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range].metaui:focus::-ms-fill-upper {
+  background: #367ebd;
+}*/
+input[type="range"].metaui.vertical {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  transform: rotate(270deg); }
+  input[type="range"].metaui.vertical::-webkit-slider-thumb {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg); }
 
 /*# sourceMappingURL=cocoa.css.map*/

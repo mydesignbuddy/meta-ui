@@ -1,0 +1,100 @@
+.metaui.checkbox {
+  display: block;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  padding-top: 0.3rem;
+  margin-bottom: 0.75rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &.inline {
+    display: inline-block;
+  }
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    &:checked ~ .checkmark {
+      background-color: #99999e;
+      border-color: #c0c0c0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    &:checked ~ .checkmark:after {
+      display: block;
+    }
+    &:disabled ~ .checkmark,
+    &:disabled:hover ~ .checkmark {
+      cursor: default;
+      border-color: #cccccd;
+      background-color: #ececec;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    border: 1px solid #c0c0c0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 3px;
+    -webkit-box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.0525);
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 5px;
+      top: 1px;
+      width: 3px;
+      height: 8px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(37deg);
+      -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
+    }
+  }
+  input[type="checkbox"]:focus ~ .checkmark {
+    cursor: pointer;
+    border-color: #bdbcbf;
+    border-width: 4px;
+    margin: 0;
+    border-radius: 5px;
+  }
+  input[type="checkbox"]:checked:focus ~ .checkmark {
+    border-color: #bdbcbf;
+    border-width: 4px;
+    margin: 0;
+    border-radius: 5px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  &.indeterminate {
+    .checkmark {
+      &:after {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        top: 6px;
+        left: 2px;
+        width: 8px;
+        height: 0.0125px;
+      }
+    }
+  }
+}
