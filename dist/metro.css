@@ -1017,4 +1017,9 @@ input[type=range].vertical {
   -moz-transform: rotate(270deg);
   transform: rotate(270deg); }
 
+section.metaui.card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #000; }
+
 /*# sourceMappingURL=metro.css.map*/
